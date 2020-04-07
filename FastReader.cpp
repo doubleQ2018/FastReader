@@ -24,7 +24,7 @@ vector<vector<double>> thread_process(const char *start, const char *end){
     double val = 0, frac = 1;
     bool is_neg = false;
     int j = 0;
-    for(auto c = start; c < end; c++){
+    for(auto c = start; c <= end; c++){
         if(*c == '\n'){
             line.push_back(is_neg? -val: val);
             lines.push_back(line);
